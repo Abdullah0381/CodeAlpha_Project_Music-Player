@@ -1,0 +1,74 @@
+/* styles.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(45deg, #ff6b6b, #556270);
+    font-family: 'Arial', sans-serif;
+}
+
+.player {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: slideIn 0.5s ease-out;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.controls button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    margin: 0 10px;
+}
+
+.controls button:hover {
+    transform: scale(1.2);
+    color: #ff6b6b;
+    transition: color 0.2s;
+}
+
+#play {
+    font-size: 30px;
+}
+
+#volume {
+    width: 100px;
+    margin-left: 20px;
+}
+
+.info {
+    margin-top: 20px;
+}
+
+#title {
+    font-size: 24px;
+    margin: 0;
+}
+
+#artist {
+    color: #888;
+    margin: 0;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
